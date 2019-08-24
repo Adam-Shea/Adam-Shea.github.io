@@ -1,11 +1,130 @@
-/*
-    Hey! Thanks for snooping around my website. I hope you like it.
-    Have an awesome day
-    ~Adam Shea
-*/
+a {
+    text-decoration: none;
+}
 
+nav ul {
+    text-align: right;
+    padding-bottom: 40px;
+}
 
-/* The typing effect */
+nav ul li {
+    list-style-type: none;
+    font-family: 'roboto';
+    font-size: 15px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 4s steps(80, end);
+}
+
+header h2 {
+    opacity: 0;
+    text-align: center;
+    font-family: 'roboto Thin';
+    padding-top: 40px;
+    animation: fadeIn 2s ease;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+main {
+    opacity: 0;
+    animation: fadeIn 2s ease;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.projectTitle {
+    padding-top: 150px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+main article {
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: black 0px 0px 4px;
+}
+
+main article div {
+    margin-left: 7px;
+    margin-top: -24px;
+}
+
+main article div h2 {
+    font-family: "Roboto";
+}
+
+main article div p {
+    font-family: 'roboto Light';
+    margin-left: 1px;
+    margin-top: -10px;
+}
+
+main article div div {
+    display: flex;
+    font-family: 'roboto Light';
+}
+
+main article h3 {
+    background: #747fe0;
+    color: white;
+    padding: 1px 2px;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-right: 13px;
+}
+
+.tools h3 {
+    background: white;
+    color: black;
+    box-shadow: green 0px 0px 4px;
+}
+
+.tools h3 a {
+    color: black;
+}
+
+.profileImage {
+    border-radius: 50%;
+    border: grey solid 3px;
+}
+
+.aboutTitle {
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+footer h3 {
+    margin-top: 50px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+footer p {
+    margin-top: 0px;
+    font-family: "Roboto";
+    text-align: center;
+}
 
 @keyframes typing {
     from {
@@ -16,182 +135,11 @@
     }
 }
 
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-    from,
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
     to {
-        border-color: transparent
+        opacity: 1;
     }
-    50% {
-        border-color: orange
-    }
-}
-
-body {
-    margin: 0;
-    background-color: #8bac0f;
-    background: linear-gradient(248deg, rgba(65, 65, 65, 1) 17%, rgba(49, 49, 49, 1) 17%, rgba(49, 49, 49, 1) 44%, rgba(202, 62, 71, 1) 44%);
-}
-
-h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-}
-
-h2 {
-    font-family: 'Montserrat', medium;
-}
-
-p {
-    font-family: 'Roboto', regular;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.navlist {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.webtitle {
-    margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding-right: 10px;
-}
-
-.navlistparent {
-    margin-top: 28px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding-right: 10px;
-}
-
-.heroTitle {
-    text-align: center;
-    font-size: 80px;
-    color: white;
-    text-shadow: 0px 0px 10px black;
-}
-
-.heroSubTitle {
-    text-align: center;
-    margin-top: -50px;
-    font-size: 15px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 0px 0px 10px black;
-}
-
-.heroBackground {
-    margin-top: -55px;
-    padding-top: 90px;
-    padding-bottom: 400px;
-}
-
-.aboutContainer {
-    background: white;
-    border-radius: 20px;
-    margin-top: -40px;
-    box-shadow: 0px 0px 10px black;
-    padding-bottom: 5px;
-}
-
-.aboutTitle {
-    padding-left: 15px;
-}
-
-.aboutText {
-    padding-left: 15px;
-    max-width: 600px;
-}
-
-.aboutButton {
-    text-align: center;
-    margin-top: -5px;
-    margin-left: 15px;
-    background: #8bac0f;
-    max-width: 170px;
-    border-radius: 10px;
-    padding: 3px 10px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 0px 0px 2px black;
-}
-
-.projectContainer {
-    background-color: #8bac0f;
-    margin-top: -10px;
-    height: 500px;
-}
-
-.heroSubTitleProjects {
-    text-align: center;
-    margin-top: -50px;
-    font-size: 15px;
-    color: white;
-    font-family: 'Roboto', regular;
-}
-
-.projectCardContainer {
-    position: absolute;
-    margin-top: 30px;
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.projectCard {
-    width: 500px;
-    text-align: center;
-    padding: 0px 10px;
-    margin: 0px 10px;
-    background: white;
-    border-radius: 10px;
-    max-width: 400px;
-    height: 500px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.projectCard p {
-    font-size: 15px;
-}
-
-.newsContainer {
-    margin-top: 300px;
-    background: linear-gradient(#8bac0f, #306230);
-    height: 900px;
-}
-
-.newsButton {
-    text-align: center;
-    margin-top: -5px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background: #247BA0;
-    max-width: 170px;
-    border-radius: 10px;
-    padding: 3px 10px;
-    color: white;
-    font-size: 23px;
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 0px 0px 2px black;
 }
