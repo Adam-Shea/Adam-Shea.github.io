@@ -104,8 +104,10 @@ main article div h2 {
 
 .projectDesc {
     font-family: 'roboto Light';
+    width: 500px;
     margin-left: 1px;
     margin-top: -10px;
+    font-size: 20px;
 }
 
 main div div div {
@@ -114,18 +116,23 @@ main div div div {
 }
 
 main div h3 {
-    background: #b5525c;
     color: white;
+    background: #b5525c;
     padding: 1px 2px;
     border-radius: 5px;
     margin-left: -5px;
     margin-right: 13px;
 }
 
+main div h3 a {
+    color: white;
+}
+
 .tools h3 {
     background: white;
     color: black;
     box-shadow: green 0px 0px 4px;
+    margin-top: 65px;
 }
 
 .tools h3 a {
@@ -203,5 +210,92 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 1025px) {
+    header h1 {
+        animation: typing 2.4s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 600px;
+    }
+}
 
+@media only screen and (max-width: 954px) {
+    header h1 {
+        animation: typing 2s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 700px;
+    }
+    main article {
+        width: 750px;
+        height: 250px;
+    }
+    main article img {
+        width: 250px;
+        height: 250px;
+    }
+    .projectDesc {
+        width: 500px;
+        font-size: 20px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 797px) {
+    header h1 {
+        animation: typing 2s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 700px;
+    }
+    main article {
+        width: 650px;
+        height: 250px;
+    }
+    main article img {
+        width: 250px;
+        height: 250px;
+    }
+    .projectDesc {
+        width: 400px;
+        font-size: 18px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    header h1 {
+        animation: typing 2s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 700px;
+    }
+    main article {
+        width: 600px;
+        height: 250px;
+    }
+    main article img {
+        width: 250px;
+        height: 250px;
+    }
+    .projectDesc {
+        width: 340px;
+        font-size: 17px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
 }
