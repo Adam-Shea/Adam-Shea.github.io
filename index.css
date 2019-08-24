@@ -1,0 +1,130 @@
+    /*
+    Hey! Thanks for snooping around my website. I hope you like it.
+    Have an awesome day
+    ~Adam Shea
+*/
+    
+    body {
+        margin: 0;
+        background-color: #70c1b3;
+    }
+    
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h2 {
+        font-family: 'Montserrat', medium;
+    }
+    
+    p {
+        font-family: 'Roboto', regular;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #247ba0;
+    }
+    
+    .navlist {
+        display: inline;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .webtitle {
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding-right: 10px;
+    }
+    
+    .navlistparent {
+        margin-top: 28px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        padding-right: 10px;
+    }
+    
+    .heroTitle {
+        text-align: center;
+        font-size: 80px;
+        color: white;
+        text-shadow: 0px 0px 10px black;
+    }
+    
+    .heroSubTitle {
+        text-align: center;
+        margin-top: -50px;
+        font-size: 15px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 0px 0px 10px black;
+    }
+    
+    .heroBackground {
+        margin-top: -55px;
+        padding-top: 90px;
+        background: linear-gradient(#247ba0, #70c1b3);
+        padding-bottom: 400px;
+    }
+    
+    .aboutContainer {
+        background: white;
+        border-radius: 20px;
+        margin-top: -40px;
+        box-shadow: 0px 0px 10px black;
+        padding-bottom: 5px;
+    }
+    
+    .aboutTitle {
+        padding-left: 15px;
+    }
+    
+    .aboutText {
+        padding-left: 15px;
+        max-width: 600px;
+    }
+    
+    .aboutButton {
+        text-align: center;
+        margin-top: -5px;
+        margin-left: 15px;
+        background: #247BA0;
+        max-width: 170px;
+        border-radius: 10px;
+        padding: 3px 10px;
+        color: white;
+        font-size: 23px;
+        font-family: 'Montserrat', sans-serif;
+        box-shadow: 0px 0px 2px black;
+    }
+    
+    .projectContainer {
+        background-color: #70c1b3;
+        margin-top: -10px;
+    }
+    
+    .heroSubTitleProjects {
+        text-align: center;
+        margin-top: -50px;
+        font-size: 15px;
+        color: white;
+        font-family: 'Roboto', regular;
+    }
+    
+    .projectCardContainer {
+        margin-top: 30px;
+        display: flex;
+    }
+    
+    .projectCard {
+        width: 500px;
+        text-align: center;
+        padding: 0px 10px;
+        margin: 0px 50px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+    }
