@@ -72,13 +72,9 @@ main {
     font-family: "Roboto";
 }
 
-.projects {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-main article {
+.projectCard {
+    display: block;
+    margin: 0 auto;
     display: flex;
     padding: 5px;
     background: white;
@@ -233,8 +229,8 @@ footer p {
     .aboutText {
         width: 700px;
     }
-    main article {
-        width: 750px;
+    .projectCard {
+        width: 700px;
         height: 250px;
     }
     main article img {
@@ -260,7 +256,7 @@ footer p {
     .aboutText {
         width: 700px;
     }
-    main article {
+    .projectCard {
         width: 650px;
         height: 250px;
     }
@@ -279,15 +275,15 @@ footer p {
 
 @media only screen and (max-width: 692px) {
     header h1 {
-        animation: typing 2s steps(80, end);
+        animation: typing 1.9s steps(80, end);
     }
     .profileImage {
         margin-top: 300px;
     }
     .aboutText {
-        width: 700px;
+        width: 540px;
     }
-    main article {
+    .projectCard {
         width: 600px;
         height: 250px;
     }
@@ -297,6 +293,94 @@ footer p {
     }
     .projectDesc {
         width: 340px;
+        font-size: 17px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    header h1 {
+        animation: typing 1.9s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 540px;
+    }
+    .projectCard {
+        width: 500px;
+        height: 300px;
+    }
+    main article img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 357px;
+    }
+    .projectDesc {
+        width: 300px;
+        font-size: 17px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 357px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    header h1 {
+        animation: typing 1.9s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 450px;
+    }
+    .productCard {
+        width: 420px;
+        height: 350px;
+    }
+    main article img {
+        width: 200px;
+        height: 200px;
+    }
+    .projectDesc {
+        width: 200px;
+        font-size: 17px;
+    }
+    .tools h3 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    header h1 {
+        animation: typing 1.9s steps(80, end);
+    }
+    .profileImage {
+        margin-top: 300px;
+    }
+    .aboutText {
+        width: 450px;
+    }
+    .productCard {
+        width: 350px;
+        height: px;
+    }
+    main article img {
+        width: 200px;
+        height: 200px;
+    }
+    .projectDesc {
+        width: 200px;
         font-size: 17px;
     }
     .tools h3 {
