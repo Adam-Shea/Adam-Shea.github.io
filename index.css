@@ -1,3 +1,23 @@
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(69, 69, 77, 1) 20%, rgba(255, 255, 255, 1) 48%);
+}
+
 a {
     text-decoration: none;
 }
@@ -21,7 +41,6 @@ nav ul li a {
 
 header h1 {
     text-align: center;
-    color: black;
     font-family: monospace;
     overflow: hidden;
     white-space: nowrap;
@@ -43,7 +62,7 @@ header h2 {
 main {
     opacity: 0;
     animation: fadeIn 2s ease;
-    animation-delay: 1.2s;
+    animation-delay: 1.4s;
     animation-fill-mode: forwards;
 }
 
@@ -53,15 +72,25 @@ main {
     font-family: "Roboto";
 }
 
+.projects {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 main article {
     display: flex;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border: solid 1px;
-    border-radius: 15px;
     padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: black 0px 0px 4px;
+    background: white;
+    box-shadow: black -1px 1px 10px;
+    width: 900px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+main article img {
+    width: 300px;
+    height: 300px;
 }
 
 main article div {
@@ -73,19 +102,19 @@ main article div h2 {
     font-family: "Roboto";
 }
 
-main article div p {
+.projectDesc {
     font-family: 'roboto Light';
     margin-left: 1px;
     margin-top: -10px;
 }
 
-main article div div {
+main div div div {
     display: flex;
     font-family: 'roboto Light';
 }
 
-main article h3 {
-    background: #747fe0;
+main div h3 {
+    background: #b5525c;
     color: white;
     padding: 1px 2px;
     border-radius: 5px;
@@ -104,26 +133,44 @@ main article h3 {
 }
 
 .profileImage {
+    display: block;
     border-radius: 50%;
-    border: grey solid 3px;
+    border: white 3px;
+    margin: 0 auto;
+    margin-top: 357px;
 }
 
-.aboutTitle {
-    padding-top: 50px;
+.profileImage:hover {
+    animation: excite 0.2s ease;
+}
+
+.aboutText {
     text-align: center;
+    color: black;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     font-family: "Roboto";
+    font-size: 25px;
+    width: 900px;
+}
+
+.aboutText a {
+    color: black;
 }
 
 footer h3 {
-    margin-top: 50px;
+    margin-top: 1100px;
     font-family: "Roboto";
     text-align: center;
+    color: white;
 }
 
 footer p {
     margin-top: 0px;
     font-family: "Roboto";
     text-align: center;
+    color: white;
 }
 
 @keyframes typing {
@@ -142,4 +189,19 @@ footer p {
     to {
         opacity: 1;
     }
+}
+
+@keyframes excite {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 }
