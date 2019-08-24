@@ -110,6 +110,10 @@ main article div h2 {
     font-size: 20px;
 }
 
+.projectDesc a {
+    color: black;
+}
+
 main div div div {
     display: flex;
     font-family: 'roboto Light';
