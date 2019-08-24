@@ -4,13 +4,51 @@
     ~Adam Shea
 */
 
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
 body {
     margin: 0;
-    background-color: #70c1b3;
+    background-color: #8bac0f;
+    background: linear-gradient(248deg, rgba(65, 65, 65, 1) 17%, rgba(49, 49, 49, 1) 17%, rgba(49, 49, 49, 1) 44%, rgba(202, 62, 71, 1) 44%);
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
 
 h2 {
@@ -24,7 +62,6 @@ p {
 .navbar {
     display: flex;
     flex-direction: row-reverse;
-    background-color: #247ba0;
 }
 
 .navlist {
@@ -66,7 +103,6 @@ p {
 .heroBackground {
     margin-top: -55px;
     padding-top: 90px;
-    background: linear-gradient(#247ba0, #70c1b3);
     padding-bottom: 400px;
 }
 
@@ -91,7 +127,7 @@ p {
     text-align: center;
     margin-top: -5px;
     margin-left: 15px;
-    background: #247BA0;
+    background: #8bac0f;
     max-width: 170px;
     border-radius: 10px;
     padding: 3px 10px;
@@ -102,7 +138,7 @@ p {
 }
 
 .projectContainer {
-    background-color: #70c1b3;
+    background-color: #8bac0f;
     margin-top: -10px;
     height: 500px;
 }
@@ -141,7 +177,7 @@ p {
 
 .newsContainer {
     margin-top: 300px;
-    background: linear-gradient(#70c1b3, #FF1654);
+    background: linear-gradient(#8bac0f, #306230);
     height: 900px;
 }
 
