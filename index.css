@@ -156,6 +156,7 @@ main article div h2 {
 
 .projectDesc a {
     color: black;
+    border-bottom: black 0.5px solid;
 }
 
 main div div div {
