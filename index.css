@@ -36,7 +36,7 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    font-family: 'roboto';
+    font-family: 'roboto', Arial, sans-sreif;
     font-size: 15px;
     display: inline-block;
     padding: 0px 20px;
@@ -70,7 +70,7 @@ header h1 {
 header h2 {
     opacity: 0;
     text-align: center;
-    font-family: 'roboto Thin';
+    font-family: 'roboto Thin', Arial, sans-serif;
     padding-top: 40px;
     /*Delays animation*/
     animation: fadeIn 2s ease;
@@ -97,7 +97,7 @@ footer {
 .projectTitle {
     padding-top: 150px;
     text-align: center;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 
@@ -140,14 +140,14 @@ main article div {
 }
 
 main article div h2 {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 
 /*Controls the description of the project*/
 
 .projectDesc {
-    font-family: 'roboto Light';
+    font-family: 'roboto Light', Arial, sans-serif;
     width: 500px;
     margin-left: 1px;
     margin-top: -10px;
@@ -164,7 +164,7 @@ main article div h2 {
 
 main div div div {
     display: flex;
-    font-family: 'roboto Light';
+    font-family: 'roboto Light', Arial, sans-serif;
 }
 
 .downloads h3 {
@@ -209,7 +209,7 @@ main div div div {
     margin-top: 10px;
     margin-left: 50%;
     transform: translateX(-50%);
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 25px;
     width: 900px;
 }
@@ -220,14 +220,14 @@ main div div div {
 
 footer h3 {
     margin-top: 100px;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
     text-align: center;
     color: white;
 }
 
 footer p {
     margin-top: 0px;
-    font-family: "Roboto";
+    font-family: "Roboto", Arial, sans-serif;
     text-align: center;
     color: white;
 }
