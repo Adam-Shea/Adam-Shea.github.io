@@ -115,9 +115,15 @@ main {
 
 /*Controls image within the card*/
 
-main article img {
+main div article img {
     width: 300px;
     height: 300px;
+    /*Stops image smoothing*/
+    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: optimize-contrast;
+    image-rendering: -o-crisp-edges;
 }
 
 
@@ -126,6 +132,8 @@ main article img {
 main article div {
     margin-left: 7px;
     margin-top: -24px;
+    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
 }
 
 main article div h2 {
@@ -273,7 +281,7 @@ footer p {
         width: 750px;
         height: 250px;
     }
-    main article img {
+    main div article img {
         width: 250px;
         height: 250px;
     }
@@ -330,7 +338,7 @@ footer p {
         width: 500px;
         height: 520px;
     }
-    main article img {
+    main div article img {
         width: 200px;
         height: 200px;
         display: block;
@@ -361,7 +369,7 @@ footer p {
     }
     .projectCard {
         width: 400px;
-        height: 530px;
+        height: 550px;
     }
     .profileImage {
         margin-top: 230px;
@@ -389,7 +397,7 @@ footer p {
         width: 350px;
         height: 530px;
     }
-    main article img {
+    main div article img {
         width: 200px;
         height: 200px;
     }
@@ -475,7 +483,7 @@ footer p {
     .projectCard {
         width: 150px;
     }
-    main article img {
+    main div article img {
         width: 100px;
         height: 100px;
     }
