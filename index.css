@@ -16,6 +16,7 @@ p {
 
 body {
     background: linear-gradient(0deg, rgba(69, 69, 77, 1) 20%, rgba(255, 255, 255, 1) 48%);
+    margin: 0;
 }
 
 a {
@@ -81,7 +82,9 @@ header h2 {
 
 /*Causes the rest of the content to eventually fade in*/
 
-main {
+main,
+nav,
+footer {
     opacity: 0;
     animation: fadeIn 2s ease;
     animation-delay: 1.4s;
