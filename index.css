@@ -1,27 +1,6 @@
-/*
-Hey, thanks for checking about my page. I hope you enjoyed looking at it as much as I enjoyed making it!
-~Adam Shea
-*/
-
-h1 {
-    color: black;
-}
-
-h2 {
-    color: black;
-}
-
-h3 {
-    color: black;
-}
-
-p {
-    color: black;
-}
-
 body {
-    background: linear-gradient(0deg, rgba(69, 69, 77, 1) 20%, rgba(255, 255, 255, 1) 48%);
     margin: 0;
+    background: linear-gradient(0deg, rgba(69, 69, 77, 1) 5%, rgba(255, 255, 255, 1) 40%);
 }
 
 a {
@@ -29,53 +8,24 @@ a {
 }
 
 
-/*Controls navigation list*/
-
-nav ul {
-    text-align: right;
-    padding-bottom: 40px;
-}
-
-
-/*Controls navigation list items*/
-
-nav ul li {
-    list-style-type: none;
-    font-family: 'roboto', Arial, sans-sreif;
-    font-size: 15px;
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-
-/*Sets navigation list items to black*/
-
-nav ul li a {
-    color: black;
-}
-
-
-/*Controls type in text*/
+/*General Text setup complete*/
 
 header h1 {
+    margin-top: 95px;
     text-align: center;
     font-family: monospace;
-    /*Hides untyped text*/
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
     letter-spacing: .15em;
-    /*Plays animation*/
-    animation: typing 4s steps(80, end);
 }
 
 
-/*Controls additional fade in text*/
+/*Typing Text*/
 
 header h2 {
     opacity: 0;
+    /*Starting Opacity*/
     text-align: center;
-    font-family: 'roboto Thin', Arial, sans-serif;
+    font-family: 'roboto', Arial, sans-serif;
+    font-weight: 300;
     padding-top: 40px;
     /*Delays animation*/
     animation: fadeIn 2s ease;
@@ -83,9 +33,6 @@ header h2 {
     /*Keeps the text visible after animation*/
     animation-fill-mode: forwards;
 }
-
-
-/*Causes the rest of the content to eventually fade in*/
 
 main,
 nav,
@@ -97,36 +44,55 @@ footer {
 }
 
 
-/*Controls the Title "Projects"*/
+/*Causes the rest of the content to eventually fade in*/
 
-.projectTitle {
-    padding-top: 150px;
+.about img {
+    display: block;
+    border-radius: 50%;
+    border: white 3px;
+    margin: 0 auto;
+    margin-top: 257px;
+    max-width: 900px;
+}
+
+.about p {
     text-align: center;
     font-family: "Roboto", Arial, sans-serif;
+    font-size: 25px;
+    padding: 0px 3%;
+}
+
+.about p a {
+    color: black;
 }
 
 
-/*Controls each project card*/
+/*Controls the layout of the about section*/
 
-.projectCard {
-    display: block;
-    margin: 0 auto;
+.projectTitle {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 90px;
+    font-family: 'roboto', Arial, sans-serif;
+}
+
+.project div {
     display: flex;
-    padding: 5px;
-    background: white;
-    box-shadow: black -1px 1px 10px;
-    width: 900px;
-    height: 300px;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
 }
 
+.project article {
+    width: 28%;
+    box-shadow: black -1px 1px 10px;
+    border-radius: 20px;
+    max-width: 500px;
+    background: white;
+}
 
-/*Controls image within the card*/
-
-main div article img {
-    width: 300px;
-    height: 300px;
-    /*Stops image smoothing*/
+.project img {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
     image-rendering: optimizeSpeed;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -134,51 +100,25 @@ main div article img {
     image-rendering: -o-crisp-edges;
 }
 
-
-/*Controls text within the card*/
-
-main article div {
-    margin-left: 7px;
-    margin-top: -24px;
-    image-rendering: optimizeSpeed;
-    image-rendering: pixelated;
+.project div article h2,
+p {
+    font-family: 'roboto', Arial, sans-serif;
+    text-align: center;
+    margin: 0 30px;
 }
 
-main article div h2 {
-    font-family: "Roboto", Arial, sans-serif;
-}
-
-
-/*Controls the description of the project*/
-
-.projectDesc {
-    font-family: 'roboto Light', Arial, sans-serif;
-    width: 500px;
-    margin-left: 1px;
-    margin-top: -10px;
-    font-size: 20px;
-}
-
-
-/*Sets hyperlinks in desc to black*/
-
-.projectDesc a {
-    color: black;
-    border-bottom: black 0.5px solid;
-}
-
-main div div div {
-    display: flex;
-    font-family: 'roboto Light', Arial, sans-serif;
+.project div article h2 a,
+p a {
+    color: black
 }
 
 .downloads h3 {
+    font-family: 'roboto', Arial, sans-serif;
     color: white;
     background: #b5525c;
     padding: 1px 2px;
-    border-radius: 5px;
-    margin-left: -5px;
-    margin-right: 13px;
+    border-radius: 9px;
+    margin-top: 0px;
 }
 
 .downloads h3 a {
@@ -186,64 +126,21 @@ main div div div {
 }
 
 .tools h3 {
+    font-family: 'roboto', Arial, sans-serif;
     background: white;
     color: black;
     box-shadow: green 0px 0px 4px;
-    margin-right: 15px;
 }
 
 .tools h3 a {
     color: black;
 }
 
-.profileImage {
-    display: block;
-    border-radius: 50%;
-    border: white 3px;
-    margin: 0 auto;
-    margin-top: 257px;
-}
-
-.profileImage:hover {
-    animation: excite 0.2s ease;
-}
-
-.aboutText {
-    text-align: center;
-    color: black;
-    margin-top: 10px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 25px;
-    width: 900px;
-}
-
-.aboutText a {
-    color: black;
-}
-
-footer h3 {
+footer {
+    font-family: 'roboto', Arial, sans-serif;
     margin-top: 100px;
-    font-family: "Roboto", Arial, sans-serif;
-    text-align: center;
+    margin-bottom: 30px;
     color: white;
-}
-
-footer p {
-    margin-top: 0px;
-    font-family: "Roboto", Arial, sans-serif;
-    text-align: center;
-    color: white;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
 }
 
 @keyframes fadeIn {
@@ -255,249 +152,36 @@ footer p {
     }
 }
 
-@keyframes excite {
-    0% {
-        transform: translateY(0px);
+@media only screen and (max-width: 767px) {
+    .project div {
+        flex-direction: column;
+        align-items: center;
     }
-    50% {
-        transform: translateY(-10px);
+    .project article {
+        width: 90%;
+        margin-bottom: 20px;
     }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@media only screen and (max-width: 1025px) {
-    header h1 {
-        animation: typing 2.4s steps(35, end);
-    }
-    .profileImage {
-        margin-top: 600px;
+    div .tools {
+        display: flex;
+        flex-direction: row;
     }
 }
 
-@media only screen and (max-width: 954px) {
-    header h1 {
-        animation: typing 2s steps(29, end);
-    }
-    .profileImage {
-        margin-top: 300px;
-    }
-    .aboutText {
-        width: 700px;
-    }
-    .projectCard {
-        width: 750px;
-        height: 250px;
-    }
-    main div article img {
-        width: 250px;
-        height: 250px;
-    }
-    .projectDesc {
-        width: 500px;
+@media only screen and (max-width: 250px) {
+    h1 {
         font-size: 20px;
     }
-    .tools h3 {
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 797px) {
-    header h1 {
-        animation: typing 2s steps(28, end);
-    }
-    .projectCard {
-        width: 650px;
-    }
-    .projectDesc {
-        width: 400px;
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 692px) {
-    header h1 {
-        animation: typing 1.9s steps(80, end);
-    }
-    .aboutText {
-        width: 540px;
-    }
-    .projectCard {
-        width: 600px;
-    }
-    .projectDesc {
-        width: 340px;
-        font-size: 17px;
-    }
-    .downloads {
-        margin-top: -20px;
-    }
-}
-
-@media only screen and (max-width: 641px) {
-    header h1 {
-        animation: typing 1.9s steps(26, end);
-    }
-    .profileImage {
-        margin-top: 300px;
-    }
-    .projectCard {
-        display: block;
-        width: 500px;
-        height: 520px;
-    }
-    main div article img {
-        width: 200px;
-        height: 200px;
-        display: block;
-        margin: 0 auto;
-    }
-    main article div h2 {
-        text-align: center;
-    }
-    .projectDesc {
-        width: 400px;
-        font-size: 20px;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-    .tools h3 {
-        margin-top: 50px;
-        margin-right: 15px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header h1 {
-        animation: typing 1.9s steps(25, end);
-    }
-    .aboutText {
-        width: 450px;
-    }
-    .projectCard {
-        width: 400px;
-        height: 550px;
-    }
-    .profileImage {
-        margin-top: 230px;
-    }
-    .projectDesc {
-        width: 300px;
-        font-size: 20px;
-    }
-    .tools h3 {
-        margin-top: 30px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    header h1 {
-        animation: typing 1s steps(20, end);
-    }
-    .aboutText {
-        width: 400px;
-    }
-    .profileImage {
-        margin-top: 225px;
-    }
-    .projectCard {
-        width: 350px;
-        height: 530px;
-    }
-    main div article img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    header h1 {
-        animation: typing 0.9s steps(20, end);
-    }
-    .aboutText {
-        width: 350px;
-    }
-    .profileImage {
-        margin-top: 103px;
-    }
-    .projectCard {
-        width: 330px;
-    }
-    .projectDesc {
-        width: 300px;
-        font-size: 20px;
-    }
-    .tools h3 {
-        margin-top: 30px;
-    }
-}
-
-@media only screen and (max-width: 355px) {
-    header h1 {
-        animation: typing 0.9s steps(20, end);
-    }
-    .aboutText {
-        width: 280px;
-        font-size: 19px;
-    }
-    .profileImage {
-        margin-top: 40px;
-    }
-    .projectCard {
-        width: 250px;
-    }
-    .projectDesc {
-        width: 240px;
-        font-size: 18px;
-    }
-    .tools h3 {
+    h2 {
         font-size: 15px;
     }
-}
-
-@media only screen and (max-width: 319px) {
-    header h1 {
-        animation: typing 0.9s steps(17, end);
-        width: 200px;
-        white-space: normal;
+    .about img {
+        width: 70%;
+        height: 20%;
     }
-    .aboutText {
-        width: 200px;
-        font-size: 16px;
-    }
-    .projectCard {
-        width: 200px;
-    }
-    .profileImage {
-        width: 150px;
-        height: 150px;
+    .about p {
+        font-size: 90%;
     }
     .projectDesc {
-        width: 190px;
-        font-size: 15.5px;
-    }
-}
-
-@media only screen and (max-width: 200px) {
-    header h1 {
-        animation: typing 0.9s steps(17, end);
-        width: 190px;
-    }
-    .profileImage {
-        width: 100px;
-        height: 100px;
-    }
-    .projectCard {
-        width: 150px;
-    }
-    main div article img {
-        width: 100px;
-        height: 100px;
-    }
-    .projectDesc {
-        width: 100px;
-        font-size: 13px;
+        font-size: 90%;
     }
 }
