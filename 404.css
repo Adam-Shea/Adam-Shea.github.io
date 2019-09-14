@@ -1,0 +1,35 @@
+body {
+    background-color: #001b58;
+}
+
+main {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    user-select: none;
+}
+
+.smile {
+    font-size: 100px;
+    text-shadow: 0px 0px 3px black;
+}
+
+.text {
+    position: absolute;
+    top: 300px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 2px;
+}
+
+.button {
+    max-width: 250px;
+    border: white solid thin;
+}
+
+.button h1 {
+    text-align: center;
+}
