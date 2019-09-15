@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+Hi! Thanks for checking out my page!
+I hope you enjoyed looking at it as much as I enjoyed making it.
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Binary Question Generator</title>
+    <title>Adam Shea</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/HeadShot.png">
+    <!--Favicon-->
 </head>
 
+
 <body>
+    <header>
+        <h1 id="typeText"></h1>
+        <!--Scroll text-->
+        <h2>I write code and develop games for people to enjoy. I love creating software that people have fun using.</h2>
+        <!--Support text-->
+    </header>
     <main>
-        <h1>Binary Question Generator</h1>
-        <h2>The ultimate binary question generator for computer nerds</h2>
-        <div>
-            <h3><a href=main.html>Get Started</a></h3>
-            <!--<h3><a href=#>Find out more</a></h3>-->
+        <div class=about>
+            <!--Contains information about Adam-->
+            <img src="img/HeadShot.png" alt="An Image of me" class=profileImage width=225 height=225>
+            <!--Main image of Adam-->
+            <p class=aboutText>I'm a young programmer eager to enter the world of programming, learning new engines and languages in the pursuit of creating fun experiences. When I'm not fooling around with a computer, I'll be jamming out to fellow code monkey <a href=https://www.jonathancoulton.com
+                    target="_blank">Jonathon Coulton</a> and playing retro games.
+            </p>
+            <!--Supporting description of Adam-->
+        </div>
+        <div class=project>
+            <h2 class=projectTitle>Projects</h2>
+            <!--Contains information about previous and current projects-->
+            <div>
+                <article>
+                    <img src="img/DicerollerLogo.png" alt="The logo for Dice Roller 2.0">
+                    <h2>Dice Roller 2.0</h2>
+                    <p class=projectDesc>A small android application about dice I developed 2 years ago. It features multiple dice related minigames and many dice skins which can be switched out at will. All of this add up to create quite a meaty dice related app compared
+                        to others out there</p>
+                    <div class=tools>
+                        <h3><a href="https://www.appgamekit.com/" target="_blank">AGK</a></h3>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="downloads">
+                        <h3><a href="https://play.google.com/store/apps/details?id=uk.co.dice.app&hl=en" target="_blank">Google Play</a>
+                        </h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="img/Logo_MadDiceStudios.png" alt="The logo for Down Miner">
+                    <h2>Down Miner</h2>
+                    <p class=projectDesc>A brand new game 2D android game about mining down. In a world that's infinitely deep and procedurally generated, use dynamite and drills to get down as far as possible. This time, the art has been done by <a href="https://www.instagram.com/jesswenbornx/"
+                            target="_blank">Jessica Wenborn</a> and the music by <a href="https://www.instagram.com/mason_honeyset/" target="_blank">Mason Hunnisett</a>.</p>
+                    <div class=tools>
+                        <h3><a href="https://www.appgamekit.com/" target="_blank">AGK</a></h3>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="downloads">
+                        <h3>To be Released</h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="img/MinigamePileScreenshot.png" alt="The logo for Minigame Pile">
+                    <h2>MiniGame Pile</h2>
+                    <p class=projectDesc>An open source collection of minigames built by the community.</p>
+                    <div class=tools>
+                        <h3><a href="https://godotengine.org/" target="_blank">Godot</a></h3>
+                    </div>
+                    <div class="downloads">
+                        <h3><a href="https://github.com/rschuma2/MinigamePile" target="_blank">GitHub</a></h3>
+                    </div>
+                </article>
+                <article>
+                    <img src="img/binaryGen.png" alt="The logo for Minigame Pile">
+                    <h2>Binary Question Generator</h2>
+                    <p class=projectDesc>An open source website that allows people to generate binary questions. It was mostly developed to help Computer Science students practice their binary skills.</p>
+                    <div class=tools>
+                        <h3>HTML</h3>
+                        <h3>CSS</h3>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="downloads">
+                        <h3><a href="https://adam-shea.github.io/Binary-Question-Generator/" target="_blank">Website</a></h3>
+                    </div>
+                </article>
+                <!--Each article contains all the information around the project-->
+            </div>
         </div>
     </main>
     <footer>
         <p>&copy; Adam Shea</p>
+        <!--Copyright information-->
     </footer>
 </body>
+
+<script src="typing.js"></script>
 
 </html>
