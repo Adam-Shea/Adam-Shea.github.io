@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background: linear-gradient(0deg, rgba(69, 69, 77, 1) 5%, rgba(255, 255, 255, 1) 40%);
 }
 
 a {
@@ -9,6 +8,12 @@ a {
 
 
 /*General Text setup complete*/
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 header h1 {
     margin-top: 95px;
@@ -78,7 +83,7 @@ footer {
 
 .project div {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     flex: 1 1 auto;
     overflow: hidden;
@@ -86,11 +91,14 @@ footer {
 
 .project article {
     width: 28%;
-    box-shadow: black -1px 1px 10px;
+    box-shadow: black 0px 0px 10px;
     border-radius: 20px;
     max-width: 500px;
-    background: white;
     margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .project img {
@@ -110,13 +118,16 @@ footer {
 .project div article h2,
 p {
     font-family: 'roboto', Arial, sans-serif;
-    text-align: center;
-    margin: 0 30px;
 }
 
 .project div article h2 a,
 p a {
     color: black
+}
+
+.downloads {
+    display: flex;
+    justify-content: center;
 }
 
 .downloads h3 {
@@ -139,6 +150,7 @@ p a {
     color: black;
     box-shadow: green 0px 0px 4px;
     user-select: none;
+    margin: 10px 5px;
 }
 
 .tools h3 a {
@@ -149,7 +161,10 @@ footer {
     font-family: 'roboto', Arial, sans-serif;
     margin-top: 100px;
     margin-bottom: 30px;
+    text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -193,4 +208,41 @@ footer {
     .projectDesc {
         font-size: 90%;
     }
+}
+
+.darkBack {
+    background-color: #0B0B0A;
+    color: white;
+}
+
+.darkCard {
+    background-color: #1D1C1A;
+    color: white;
+}
+
+.whiteCard {
+    background-color: white;
+    color: black;
+}
+
+.whiteBack {
+    background-color: white;
+    color: black;
+    background: linear-gradient(0deg, rgba(69, 69, 77, 1) 0%, rgba(255, 255, 255, 1) 4%);
+}
+
+.darkButton {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0px 0px 3px black;
+    background-color: #0B0B0A;
+    color: white;
+}
+
+.whiteButton {
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0px 0px 3px black;
+    background-color: white;
+    color: black;
 }

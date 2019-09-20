@@ -18,6 +18,8 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
 
 
 <body>
+    <button onClick=switchLight() class=darkButton id=darkButton>Dark</button>
+
     <header>
         <h1 id="typeText"></h1>
         <!--Scroll text-->
@@ -30,7 +32,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
             <img src="img/HeadShot.png" alt="An Image of me" class=profileImage width=225 height=225>
             <!--Main image of Adam-->
             <p class=aboutText>I'm a young programmer eager to enter the world of programming, learning new engines and languages in the pursuit of creating fun experiences. When I'm not fooling around with a computer, I'll be jamming out to fellow code monkey <a href=https://www.jonathancoulton.com
-                    target="_blank">Jonathon Coulton</a> and playing retro games.
+                    target="_blank" id="jocolink">Jonathon Coulton</a> and playing retro games.
             </p>
             <!--Supporting description of Adam-->
         </div>
@@ -38,7 +40,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
             <h2 class=projectTitle>Projects</h2>
             <!--Contains information about previous and current projects-->
             <div>
-                <article>
+                <article class=article>
                     <img src="img/DicerollerLogo.png" alt="The logo for Dice Roller 2.0">
                     <h2>Dice Roller 2.0</h2>
                     <p class=projectDesc>A small android application about dice I developed 2 years ago. It features multiple dice related minigames and many dice skins which can be switched out at will. All of this add up to create quite a meaty dice related app compared
@@ -52,11 +54,11 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                         </h3>
                     </div>
                 </article>
-                <article>
+                <article class=article>
                     <img src="img/Logo_MadDiceStudios.png" alt="The logo for Down Miner">
                     <h2>Down Miner</h2>
                     <p class=projectDesc>A brand new game 2D android game about mining down. In a world that's infinitely deep and procedurally generated, use dynamite and drills to get down as far as possible. This time, the art has been done by <a href="https://www.instagram.com/jesswenbornx/"
-                            target="_blank">Jessica Wenborn</a> and the music by <a href="https://www.instagram.com/mason_honeyset/" target="_blank">Mason Hunnisett</a>.</p>
+                            target="_blank" class=projectLink>Jessica Wenborn</a> and the music by <a href="https://www.instagram.com/mason_honeyset/" target="_blank" class=projectLink>Mason Hunnisett</a>.</p>
                     <div class=tools>
                         <h3><a href="https://www.appgamekit.com/" target="_blank">AGK</a></h3>
                         <h3>C++</h3>
@@ -65,7 +67,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                         <h3>To be Released</h3>
                     </div>
                 </article>
-                <article>
+                <article class=article>
                     <img src="img/MinigamePileScreenshot.png" alt="The logo for Minigame Pile">
                     <h2>MiniGame Pile</h2>
                     <p class=projectDesc>An open source collection of minigames built by the community.</p>
@@ -76,7 +78,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                         <h3><a href="https://github.com/rschuma2/MinigamePile" target="_blank">GitHub</a></h3>
                     </div>
                 </article>
-                <article>
+                <article class=article>
                     <img src="img/BinaryGen.png" alt="A screenshot of the binary generator">
                     <h2>Binary Question Generator</h2>
                     <p class=projectDesc>An open source website that allows people to generate binary questions. It was mostly developed to help Computer Science students practice their binary skills.</p>
@@ -89,7 +91,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                         <h3><a href="https://adam-shea.github.io/Binary-Question-Generator/" target="_blank">Website</a></h3>
                     </div>
                 </article>
-                <article>
+                <article class=article>
                     <img src="img/graphPaperCreator.png" alt="A screenshot of graph paper generator">
                     <h2>Graph Paper Creator</h2>
                     <p class=projectDesc>Graph Paper Creator is a tool that people can use to create custom graph lines. An example usecase would be projecting the website on a board and then using pen to create a graph. Graph Paper Creator is incredibly customisable and
@@ -108,11 +110,54 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
         </div>
     </main>
     <footer>
-        <p>&copy; Adam Shea</p>
+        <p id=copy>&copy; Adam Shea</p>
         <!--Copyright information-->
     </footer>
+
+
+    <script>
+        var isDarkOn = true;
+        switchLight()
+
+        function switchLight() {
+            if (isDarkOn == false) {
+                document.body.classList.remove("whiteBack");
+                document.body.classList.add("darkBack");
+                document.getElementById("darkButton").classList.remove("darkButton");
+                document.getElementById("darkButton").classList.add("whiteButton");
+                document.getElementById("jocolink").style.color = "white";
+                document.getElementById("copy").style.color = "white";
+                for (i = 0; i < 5; i++) {
+                    document.getElementsByClassName("article")[i].classList.remove("whiteCard");
+                    document.getElementsByClassName("article")[i].classList.add("darkCard");
+                }
+                for (i = 0; i < 2; i++) {
+                    document.getElementsByClassName("projectLink")[i].style.color = "white";
+                }
+                isDarkOn = true;
+            } else {
+                document.body.classList.add("whiteBack");
+                document.body.classList.remove("darkBack");
+                document.getElementById("jocolink").style.color = "black";
+                document.getElementById("copy").style.color = "black";
+                document.getElementById("darkButton").classList.add("darkButton");
+                document.getElementById("darkButton").classList.remove("whiteButton");
+                for (i = 0; i < 5; i++) {
+                    document.getElementsByClassName("article")[i].classList.remove("darkCard");
+                    document.getElementsByClassName("article")[i].classList.add("whiteCard");
+                }
+                for (i = 0; i < 2; i++) {
+                    document.getElementsByClassName("projectLink")[i].style.color = "black";
+                }
+                isDarkOn = false;
+            }
+        }
+    </script>
+
+    <script src="typing.js">
+    </script>
+
 </body>
 
-<script src="typing.js"></script>
 
 </html>
