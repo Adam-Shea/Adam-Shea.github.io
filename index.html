@@ -125,6 +125,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                 document.body.classList.add("darkBack");
                 document.getElementById("darkButton").classList.remove("darkButton");
                 document.getElementById("darkButton").classList.add("whiteButton");
+                document.getElementById("darkButton").innerHTML = "Light Mode";
                 document.getElementById("jocolink").style.color = "white";
                 document.getElementById("copy").style.color = "white";
                 for (i = 0; i < 5; i++) {
@@ -142,6 +143,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                 document.getElementById("copy").style.color = "black";
                 document.getElementById("darkButton").classList.add("darkButton");
                 document.getElementById("darkButton").classList.remove("whiteButton");
+                document.getElementById("darkButton").innerHTML = "Dark Mode";
                 for (i = 0; i < 5; i++) {
                     document.getElementsByClassName("article")[i].classList.remove("darkCard");
                     document.getElementsByClassName("article")[i].classList.add("whiteCard");
