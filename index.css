@@ -97,11 +97,14 @@ footer {
     display: block;
     width: 50%;
     margin: 5px auto;
-    image-rendering: optimizeSpeed;
-    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
     image-rendering: -moz-crisp-edges;
-    image-rendering: optimize-contrast;
     image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
 }
 
 .project div article h2,
