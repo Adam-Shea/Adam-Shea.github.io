@@ -19,8 +19,6 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
 
 
 <body>
-    <button onClick=switchLight() class=darkButton id=darkButton>Dark</button>
-
     <header>
         <h1 id="typeText"></h1>
         <!--Scroll text-->
@@ -115,57 +113,6 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
         <!--Copyright information-->
     </footer>
 
-
-    <script>
-        var isDarkOn = true;
-        //Holds information about whether or not the page is dark
-        switchLight()
-            //Initally switches the page to light theme
-
-        function switchLight() {
-            if (isDarkOn == false) { //Is the page dark?
-                document.body.classList.remove("whiteBack");
-                document.body.classList.add("darkBack");
-                //Change the background colour and text colour to class
-                document.getElementById("darkButton").classList.remove("darkButton");
-                document.getElementById("darkButton").classList.add("whiteButton");
-                document.getElementById("darkButton").innerHTML = "Light Mode";
-                //Changes the dark mode button
-                document.getElementById("jocolink").style.color = "white";
-                //Changes the colour of the JOCO link
-                document.getElementById("copy").style.color = "white";
-                //Changes the colour of the copy link
-                for (i = 0; i < 5; i++) {
-                    document.getElementsByClassName("article")[i].classList.remove("whiteCard");
-                    document.getElementsByClassName("article")[i].classList.add("darkCard");
-                } //Changes the colour of all the articles
-                for (i = 0; i < 2; i++) {
-                    document.getElementsByClassName("projectLink")[i].style.color = "white";
-                } //Changes the colour of all of the links in the article
-                isDarkOn = true;
-            } else {
-                document.body.classList.add("whiteBack");
-                document.body.classList.remove("darkBack");
-                //Changes the dark mode button
-                document.getElementById("jocolink").style.color = "black";
-                //Changes the colour of the JOCO link
-                document.getElementById("copy").style.color = "black";
-                //Changes the colour of the copy link
-                document.getElementById("darkButton").classList.add("darkButton");
-                document.getElementById("darkButton").classList.remove("whiteButton");
-                document.getElementById("darkButton").innerHTML = "Dark Mode";
-                //Changes the dark mode button
-                for (i = 0; i < 5; i++) {
-                    document.getElementsByClassName("article")[i].classList.remove("darkCard");
-                    document.getElementsByClassName("article")[i].classList.add("whiteCard");
-                } //Changes the colour of all the articles
-                for (i = 0; i < 2; i++) {
-                    document.getElementsByClassName("projectLink")[i].style.color = "black";
-                } //Changes the colour of all of the links in the article
-                isDarkOn = false;
-            }
-        }
-    </script>
 
     <script src="typing.js">
         //Contains text scrolling script
