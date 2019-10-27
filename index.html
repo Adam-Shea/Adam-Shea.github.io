@@ -66,17 +66,7 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
                         <h3>To be Released</h3>
                     </div>
                 </article>
-                <article class=article>
-                    <img src="img/MinigamePileScreenshot.png" alt="The logo for Minigame Pile">
-                    <h2>MiniGame Pile</h2>
-                    <p class=projectDesc>An open source collection of minigames built by the community.</p>
-                    <div class=tools>
-                        <h3><a href="https://godotengine.org/" target="_blank">Godot</a></h3>
-                    </div>
-                    <div class="downloads">
-                        <h3><a href="https://github.com/rschuma2/MinigamePile" target="_blank">GitHub</a></h3>
-                    </div>
-                </article>
+
                 <article class=article>
                     <img src="img/BinaryGen.png" alt="A screenshot of the binary generator">
                     <h2>Binary Question Generator</h2>
@@ -114,8 +104,19 @@ I hope you enjoyed looking at it as much as I enjoyed making it.
     </footer>
 
 
-    <script src="typing.js">
-        //Contains text scrolling script
+    <script>
+        var i = 0;
+        var txt = "Hi, I'm Adam Shea";
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typeText").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed)
+            }
+        }
+        typeWriter()
     </script>
 
 </body>

@@ -1,36 +1,27 @@
 body {
-    margin: 0;
+    margin: 0
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
-
-
-/*General Text setup complete*/
 
 header h1 {
     margin-top: 95px;
     text-align: center;
     font-family: monospace;
-    letter-spacing: .15em;
+    letter-spacing: .15em
 }
-
-
-/*Typing Text*/
 
 header h2 {
     opacity: 0;
-    /*Starting Opacity*/
     text-align: center;
     font-family: 'roboto', Arial, sans-serif;
     font-weight: 300;
     padding-top: 40px;
-    /*Delays animation*/
     animation: fadeIn 2s ease;
     animation-delay: 0.8s;
-    /*Keeps the text visible after animation*/
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards
 }
 
 main,
@@ -39,11 +30,8 @@ footer {
     opacity: 0;
     animation: fadeIn 2s ease;
     animation-delay: 1.4s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards
 }
-
-
-/*Causes the rest of the content to eventually fade in*/
 
 .about img {
     display: block;
@@ -51,28 +39,25 @@ footer {
     border: white 3px;
     margin: 0 auto;
     margin-top: 257px;
-    max-width: 900px;
+    max-width: 900px
 }
 
 .about p {
     text-align: center;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 25px;
-    padding: 0px 3%;
+    padding: 0 3%
 }
 
 .about p a {
-    color: black;
+    color: black
 }
-
-
-/*Controls the layout of the about section*/
 
 .projectTitle {
     text-align: center;
     padding-top: 100px;
     margin-bottom: 90px;
-    font-family: 'roboto', Arial, sans-serif;
+    font-family: 'roboto', Arial, sans-serif
 }
 
 .project div {
@@ -80,19 +65,19 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 1 auto;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .project article {
     width: 28%;
-    box-shadow: black 0px 0px 10px;
+    box-shadow: black 0 0 10px;
     border-radius: 20px;
     max-width: 500px;
     margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 .project img {
@@ -106,12 +91,12 @@ footer {
     image-rendering: -o-crisp-edges;
     image-rendering: pixelated;
     image-rendering: optimizeQuality;
-    image-rendering: optimizeSpeed;
+    image-rendering: optimizeSpeed
 }
 
 .project div article h2,
 p {
-    font-family: 'roboto', Arial, sans-serif;
+    font-family: 'roboto', Arial, sans-serif
 }
 
 .project div article h2 a,
@@ -121,7 +106,7 @@ p a {
 
 .downloads {
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .downloads h3 {
@@ -130,25 +115,25 @@ p a {
     background: #b5525c;
     padding: 1px 2px;
     border-radius: 9px;
-    margin-top: 0px;
-    user-select: none;
+    margin-top: 0;
+    user-select: none
 }
 
 .downloads h3 a {
-    color: white;
+    color: white
 }
 
 .tools h3 {
     font-family: 'roboto', Arial, sans-serif;
     background: white;
     color: black;
-    box-shadow: green 0px 0px 4px;
+    box-shadow: green 0 0 4px;
     user-select: none;
-    margin: 10px 5px;
+    margin: 10px 5px
 }
 
 .tools h3 a {
-    color: black;
+    color: black
 }
 
 footer {
@@ -158,68 +143,68 @@ footer {
     text-align: center;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0
     }
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:767px) {
     .project div {
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
     .project article {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
     div .tools {
         display: flex;
-        flex-direction: row;
+        flex-direction: row
     }
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width:250px) {
     h1 {
-        font-size: 20px;
+        font-size: 20px
     }
     h2 {
-        font-size: 15px;
+        font-size: 15px
     }
     .about img {
         width: 70%;
-        height: 20%;
+        height: 20%
     }
     .about p {
-        font-size: 90%;
+        font-size: 90%
     }
     .projectDesc {
-        font-size: 90%;
+        font-size: 90%
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
     body {
         background-color: #0B0B0A;
-        color: white;
+        color: white
     }
     .about p a {
-        color: white;
+        color: white
     }
     footer {
-        color: white;
+        color: white
     }
     article {
         background-color: #1D1C1A;
-        color: white;
+        color: white
     }
     article a {
-        color: white;
+        color: white
     }
 }
