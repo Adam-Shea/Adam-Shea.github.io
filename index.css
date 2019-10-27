@@ -19,6 +19,9 @@ header h2 {
     font-family: 'roboto', Arial, sans-serif;
     font-weight: 300;
     padding-top: 40px;
+    -webkit-animation: fadeIn 2s ease;
+    -webkit-animation-delay: 0.8s;
+    -webkit-animation-fill-mode: forwards;
     animation: fadeIn 2s ease;
     animation-delay: 0.8s;
     animation-fill-mode: forwards
@@ -28,6 +31,9 @@ main,
 nav,
 footer {
     opacity: 0;
+    -webkit-animation: fadeIn 2s ease;
+    -webkit-animation-delay: 1.4s;
+    -webkit-animation-fill-mode: forwards;
     animation: fadeIn 2s ease;
     animation-delay: 1.4s;
     animation-fill-mode: forwards
@@ -36,7 +42,6 @@ footer {
 .about img {
     display: block;
     border-radius: 50%;
-    border: white 3px;
     margin: 0 auto;
     margin-top: 257px;
     max-width: 900px
@@ -155,6 +160,15 @@ footer {
     }
 }
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
 @media only screen and (max-width:767px) {
     .project div {
         flex-direction: column;
@@ -206,5 +220,16 @@ footer {
     }
     article a {
         color: white
+    }
+}
+
+@supports (not (animation:fadeIn 2s ease)) and (not(-webkit-animation:fadeIn 2s ease)) {
+    header h2 {
+        opacity: 1
+    }
+    main,
+    nav,
+    footer {
+        opacity: 1
     }
 }
